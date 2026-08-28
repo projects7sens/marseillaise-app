@@ -18,7 +18,16 @@ class SettingFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'key' => fake()->unique()->word(),
+            'value' => fake()->word(),
         ];
+    }
+
+    public function keyValuePair(string $key, mixed $value): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'key' => $key,
+            'value' => is_array($value) || is_object($value) ? json_encode($value) : (string) $value,
+        ]);
     }
 }

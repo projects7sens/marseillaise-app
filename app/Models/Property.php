@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Enum\PropertyStatus;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -34,6 +35,7 @@ class Property extends Model
             'options' => 'array',
             'price' => 'decimal:2',
             'published_at' => 'datetime',
+            "status" => PropertyStatus::class,
             'is_featured' => 'boolean',
             'view_count' => 'integer',
         ];

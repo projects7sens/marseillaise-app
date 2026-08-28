@@ -18,7 +18,11 @@ class CountryFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => fake()->country(),
+            'code' => fake()->countryCode(),
+            'dialing_code' => fake()->numerify('+###'),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }
