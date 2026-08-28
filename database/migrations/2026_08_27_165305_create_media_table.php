@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('entity_id');
             $table->string('type');
             $table->integer('sort_order');
-            $table->json('meta')->nullable();
+            $table->json('metadata')->nullable();
             $table->timestamps();
         });
     }
