@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->foreignId('country_id')->constrained('roles')->onDelete('cascade');
+            $table->foreignId('country_id')->constrained('countries')->onDelete('cascade');
             $table->foreignId('parent_id')->nullable()->constrained('locations')->onDelete('cascade');
             $table->integer('level')->default(0);
             $table->timestamps();
