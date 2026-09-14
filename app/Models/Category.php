@@ -48,7 +48,7 @@ class Category extends Model
     {
         return $this->belongsToMany(
             Option::class,
-            'category_options'
+            'category_option'
         )->withPivot([
             'required',
             'sort_order',
