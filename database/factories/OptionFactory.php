@@ -73,7 +73,7 @@ class OptionFactory extends Factory
             $order = 1;
             foreach ($categories as $category) {
                 $option->categories()->attach($category->id, [
-                    'required' => $required,
+                    'is_required' => $required,
                     'sort_order' => $order++,
                 ]);
             }

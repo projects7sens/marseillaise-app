@@ -26,7 +26,7 @@ class Property extends Model
         'status',
         'published_at',
         'is_featured',
-        'view_count',
+        'views_count',
     ];
 
     protected function casts(): array
@@ -37,7 +37,7 @@ class Property extends Model
             'published_at' => 'datetime',
             "status" => PropertyStatus::class,
             'is_featured' => 'boolean',
-            'view_count' => 'integer',
+            'views_count' => 'integer',
         ];
     }
 

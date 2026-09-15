@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Category;
+use App\Models\Location;
 use App\Models\PropertySearchRequest;
 use Illuminate\Database\Eloquent\Factories\Factory;
 

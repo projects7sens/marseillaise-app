@@ -22,6 +22,8 @@ class DatabaseSeeder extends Seeder
             SettingSeeder::class,
             LocationSeeder::class,
             CategorySeeder::class,
+            PropertySeeder::class,
+            PropertySearchRequestSeeder::class,
         ]);
     }
 }

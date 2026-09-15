@@ -50,7 +50,7 @@ class Category extends Model
             Option::class,
             'category_option'
         )->withPivot([
-            'required',
+            'is_required',
             'sort_order',
         ]);
     }

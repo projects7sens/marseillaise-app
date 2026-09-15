@@ -42,7 +42,7 @@ class PropertyFactory extends Factory
             'status' => PropertyStatus::Draft,
             'published_at' => null,
             'is_featured' => false,
-            'view_count' => fake()->numberBetween(0, 500),
+            'views_count' => fake()->numberBetween(0, 500),
         ];
     }
 
